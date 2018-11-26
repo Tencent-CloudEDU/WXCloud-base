@@ -1,0 +1,35 @@
+<!--pages/addFunction/addFunction.wxml-->
+<view class="container">
+
+  <view class="list">
+    <view class="list-item" bindtap="cTestFunction">
+      <text>简单调用</text>
+    </view>
+    <view class="list-item" bindtap="cGetWXContext">
+      <text>获取用户信息</text>
+    </view>
+    <view class="list-item" bindtap="cSetTimeout">
+      <text>异步结果反馈</text>
+    </view>
+    <view class="list-item" bindtap="clear">
+      <text>清除数据</text>
+    </view>
+
+    <view class="list-item" wx:if="{{result}}">
+      <text class="request-text">调用结果：{{result}}</text>
+    </view>
+    <view class="list-item" wx:if="{{cAPPID}}">
+      <text class="request-text">APPID：{{cAPPID}}</text>
+    </view>
+    <view class="list-item" wx:if="{{cOPENID}}">
+      <text class="request-text">OPENID：{{cOPENID}}</text>
+    </view>
+    <view class="list-item" wx:if="{{cerrMsg}}">
+      <text class="request-text">errMsg：{{cerrMsg}}</text>
+    </view>
+    <view class="list-item" wx:if="{{cSetTimeout}}">
+      <text class="request-text">调用结果：{{cSetTimeout}}</text>
+    </view>
+  </view>
+
+</view>

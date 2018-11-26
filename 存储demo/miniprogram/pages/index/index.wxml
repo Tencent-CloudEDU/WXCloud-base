@@ -1,0 +1,4 @@
+<!-- 上传图片 -->
+  <view class="uploader">
+    <button bindtap="doUpload" >上传图片</button>
+  </view>

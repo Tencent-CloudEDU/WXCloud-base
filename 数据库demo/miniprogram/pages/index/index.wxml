@@ -1,0 +1,13 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section">
+    <view class="weui-cells__title">数据库插入</view>
+     <view class="weui-cell weui-cell_input">
+    <input class="weui-input" name="input" placeholder="请在此输入需要插入数据库的内容" />
+    </view>
+  </view>
+<button formType="submit" >写入</button>
+<button bindtap="onQuery" >查询</button>
+<button bindtap="onCounterInc" >更新</button>
+<button bindtap="onRemove" >删除</button>
+<text class="code" wx:if="{{queryResult}}">{{queryResult}}</text>
+</form>

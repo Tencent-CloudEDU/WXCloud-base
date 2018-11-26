@@ -1,0 +1,28 @@
+<!--pages/storageConsole/storageConsole.wxml-->
+<view class="container">
+
+  <view class="list">
+    <view class="list-item" bindtap="testCgi">
+      <text class="black">上传成功</text>
+    </view>
+    <view class="list-item">
+      <text class="request-text">文件 ID：{{fileID}}</text>
+    </view>
+    <view class="list-item">
+      <text class="request-text">云文件路径：{{cloudPath}}</text>
+    </view>
+     <view class="list-item">
+      <text class="request-text">真实链接地址：
+      {{bTempFileURL}}
+      </text>
+    </view>
+    <view class="list-item">
+      <image class="image1" src="{{imagePath}}" mode="aspectFit"></image>
+    </view>
+  </view>
+
+    <button class="button" bindtap="cDownloadFile" >下载文件</button>
+    <button class="button" bindtap="cGetTempFileURL" >获取链接</button>
+    <button class="button" bindtap="cDelete" >删除图片</button>
+
+</view>
