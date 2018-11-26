@@ -13,3 +13,7 @@
 课程链接
 
 https://cloud.tencent.com/developer/edu/course-100018-1365
+
+
+
+demo基于云开发QuickStart，二次整合，配合视频教学。
